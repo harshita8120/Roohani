@@ -1,0 +1,37 @@
+.slider {
+  position: relative;
+  max-width: 1050px;
+  margin: auto;
+  overflow: hidden;
+}
+
+.slides {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  
+}
+
+button.prev, button.next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0,0,0,0.5);
+  color: white;
+  border: none;
+  padding: 8px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+button.prev { left: 5px; }
+button.next { right: 5px; }
+
+button:focus {
+  outline: 2px solid #fff;
+} .slider button {
+	font-size: 30px;
+	border-radius: 50%;
+	width: 50px;
+	height:50px;
+	border: none;
+}
