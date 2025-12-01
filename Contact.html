@@ -10,7 +10,7 @@
 	<link rel="stylesheet" href="style/common/header.css">
 	<link rel="stylesheet" href="style/common/footer.css">
 
-	<script src="JavaScript.js"></script>
+	<script src="scripts/utils/formValidation.js"></script>
 	<script src="scripts/common/header.js" defer></script>
 	<script src="scripts/common/footer.js" defer></script>
 </head>
@@ -36,24 +36,24 @@
 <h2><center> Get in touch with us! </center></h2>
 
 
-<form name="contactForm"  action="https://formspree.io/f/xeokgwbk" method="post" onsubit="msgFunction();">
+<form name="contactForm"  action="https://formspree.io/f/xeokgwbk" method="post" onsubit="return msgFunction();">
 <table>
 	<tr>
 	<td rowspan="5"><img src="images/design.png" alt="contact" style="height:500px; width:400px;"></td>
 	<td><label for="name"><b>Name:</b></label></td>
-	<td><div id="name"><input type="text" id="name" name="Name" required>
+	<td><div id="name"><input type="text" id="name" name="Name">
 		</div></td>
   </tr>
 
   <tr>
 	<td> <label for="email"><b>E-mail:</b></label></td>
-	<td><div id="name"><input type="text" id="email" name="E-mail" required> 
+	<td><div id="name"><input type="text" id="email" name="E-mail"> 
 		</div></td>
   </tr>
 
   <tr>
 	<td> <p><b> You're interested in: </b></p> </td>
-	<td><div id="name"><input list="subject" name="Subject" required>
+	<td><div id="name"><input list="subject" name="Subject">
 	     <datalist id="subject">
 	     <option value="Reservation">
 	     <option value="Feedback">
