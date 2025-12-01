@@ -83,42 +83,6 @@
 		text-align:center;
 		font-family:candara;
 
-	} #message {
-		background-color:white;
-		text-align:center;
-		padding-left:60px;
-		padding-right:60px;
-		padding-bottom:30px;
-		width:60%;
-		margin-bottom:50px;
-		float:left;
-		margin-left:40px;
-
-	} #connect {
-		text-align:center;
-		color:white;
-		font-size:25px;
-		margin-right:110px;
-		float:right;
-		padding-top:50px;
-		width:200px;
-
-	} #box1,#box2 {
-		border:2px solid white;
-		border-radius:10px;
-		padding:10px;
-		border-spacing:50px;
-		background-color:black;
-		width:200px;
-		float:right;
-		margin-bottom:30px;
-		transition:scale 2s;
-		box-shadow: 6px 6px 6px black;
-
-	} #box1:hover, #box2:hover {
-		transform: scale(1.1);
-		
-
 	} #submit, #book {
 		background-color:#DAA320;
 		color: black;

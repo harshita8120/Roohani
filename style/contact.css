@@ -1,0 +1,124 @@
+/* 1. The Main Wrapper: Uses CSS Grid */
+.contact-container {
+   display: grid;
+    /* First col (Form) gets 70%, Second col (Sidebar) gets 30% */
+    grid-template-columns: 7fr 3fr; 
+    gap: 30px;
+    width: 90%;
+    max-width: 1400px;
+    margin: 50px auto;
+    align-items: stretch;
+}
+
+/* --- 2. Form Styling --- */
+.form-wrapper {
+   background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    text-align:center;
+}
+
+.form-wrapper td p {
+    margin: 0; /* Forces any paragraph inside the table to have zero gap */
+}
+
+.responsive-img {
+    width: 100%;
+    max-width: 250px;  /* Limits image width */
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+}
+
+.form-wrapper table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed; /* This stops the image from exploding the layout */
+}
+/* Define Table Column Widths */
+.form-wrapper td { padding: 10px; } /* Spacing between cells */
+
+/* Column 1: Image */
+.form-wrapper td:first-child { width: 35%; vertical-align: middle; }
+/* Column 2: Labels */
+.form-wrapper td:nth-child(2) { width: 15%; text-align: right; font-weight: bold; }
+/* Column 3: Inputs */
+
+.form-wrapper td:last-child { width: 50%; }
+
+/* Input Styling */
+.form-wrapper input, .form-wrapper select, .form-wrapper textarea {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* 3. Right Side: The Sidebar */
+.sidebar-wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100%; /* Matches form height */
+    gap: 20px;
+
+    text-align:center;
+    color:white;
+    font-size:25px;
+}
+
+
+
+/* 4. The Sidebar Boxes (Email/Phone) */
+.info-box {
+    background-color: #f8f8f8;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    border: 1px solid #eee;
+}
+
+/* 5. The Map Box */
+.map-box {
+    flex-grow: 1; /* Stretches to fill remaining height */
+    background: #eee;
+    border-radius: 10px;
+    overflow: hidden;
+    min-height: 250px; 
+    position: relative;
+    border: 2px solid white;
+    box-shadow: 6px 6px 6px black;
+}
+
+.map-box iframe {
+   position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    border: 0;
+}
+
+/* Mobile Fix */
+@media (max-width: 900px) {
+    .contact-container { grid-template-columns: 1fr; }
+    .map-box { min-height: 300px; }
+}
+
+
+.contactBox {
+    border:2px solid white;
+    border-radius:10px;
+    padding:10px;
+    background-color:black;
+    width:100%;
+    transition: transform 0.3s ease;
+    box-sizing: border-box;
+    box-shadow: 6px 6px 6px black;
+
+} .contactBox:hover {
+    transform: scale(1.1);
+    
+
+}
+
