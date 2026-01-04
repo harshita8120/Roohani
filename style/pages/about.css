@@ -1,0 +1,22 @@
+ #text {
+    color:white;
+    font-size: 19px;
+    margin: 0;
+    font-family: calibri;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: left;
+
+} .text1 {
+    display: flex;
+    padding: 10px;
+    margin: 10px;
+} .text2 {
+    display:flex;
+   margin: 10px;
+} figcaption{
+    color: white;
+    font-size: 18px;
+    font-family: calibri;
+    font-style: italic;
+}
