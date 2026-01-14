@@ -62,13 +62,6 @@ body {
 		text-align:right;
 		text-decoration:underline;
 
-	} #title {
-		color: #DAA320;
-		font-size:80px;
-		text-align:center;
-		font-family:candara;
-		margin-bottom: 10px;
-
 	} #submit, #book {
 		background-color:#DAA320;
 		color: black;

@@ -50,7 +50,7 @@
 
 /*Responsive design*/
 
-@media (max-width:600px){
+@media (max-width:768px){
     .ri-menu-3-fill {
         display: block;
     } .list {

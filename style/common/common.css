@@ -1,0 +1,14 @@
+#title {
+    color: #DAA320;
+    font-size:6.5vw;
+    text-align:center;
+    font-family:candara;
+    margin-bottom: 10px;
+
+}
+
+@media (max-width: 768px){
+ #title{
+    font-size: 8vw;
+ }
+}
