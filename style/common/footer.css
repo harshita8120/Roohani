@@ -29,11 +29,11 @@
 
 /*Responsive design*/
 
-@media (max-width:600px){
+@media (max-width:768px){
     .footer-container p, .footer-container span {
         font-size: max(15px, 2.5vw);
         
-    } .social, #socialPara {
+    } .social, #socialPara, #address {
         display: none;
     }
 

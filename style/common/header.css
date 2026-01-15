@@ -57,7 +57,7 @@
         position: absolute;
         top: 12vw;
         right: 6vw;
-    } .navbar-vertical-invisible{
+    } .navbar-vertical-invisible, .list-vertical{
         display: none;
     }.list {
         display: none;
@@ -74,7 +74,7 @@
         inset: 0; /* Shorthand for top, bottom, left, right: 0 */
         width: 100%;
         height: 100vh;
-        overflow: hidden;
+        overflow-y: auto;
 
         display: block;
 
@@ -86,18 +86,39 @@
     } .navbar-vertical-visible .crossButton{
         color: white;
         position: absolute;
-        top: 20vw;
-        right: 20vw;
+        top: 14vw;
+        right: 10vw;
         cursor: pointer;
-        font-size: 50px;
         z-index: 2;
         display: block;
+        font-size: 12vw;
+        transform: scale(1.5);
     } .navbar-vertical-visible .list-vertical{
         display: flex;
         flex-direction: column;
         align-items: center;
         text-align: center;
         gap:5px;
-        font-size: 24vw;
-    } 
+        margin-top: 14vw;
+        
+    } .list-vertical a{
+        margin-top: 10vw;
+        font-size: 13vw;
+    } .social-links-vertical img{
+        width:13vw;
+        height:13vw;
+        margin: 3.8vw;
+    } .navbar-vertical-visible #socialPara {
+        color: white;
+        font-size: 12vw;
+        display: block;
+        margin: 6vw 0;
+        font-family: Calibri;
+    } .navbar-vertical-visible #address{
+        color: white;
+        font-size: 8vw;
+        display: block;
+        margin: 6vw 0;
+        font-family: Calibri;
+    }
 }
