@@ -15,11 +15,11 @@
     justify-content: space-between;
     align-items: center;
 
-} .nav-logo {
-    width: 200px;
-    height: 100%;      
+} .nav-logo img{
+    display: inline-block;
+    width: 10vw;
+    height: auto;      
     object-fit: contain;
-    max-height: 100px;
 
 } .list {
     display: flex;
@@ -41,13 +41,16 @@
     color:black;
 	background-color:#FFD700;
 
-} .menuButton{
+} .menuButton, .list-vertical, #address, .social-links-vertical, #socialpara{
     display: none;
 }
 
 /*Responsive design*/
 
 @media (max-width:768px){
+    .navbar-container{
+        height:auto;
+    }
     .menuButton {
         display: block;
         color:white;
@@ -57,7 +60,7 @@
         position: absolute;
         top: 12vw;
         right: 6vw;
-    } .navbar-vertical-invisible, .list-vertical{
+    } .navbar-vertical-invisible, .list-vertical, #address, .social-links-vertical, #socialpara{
         display: none;
     }.list {
         display: none;
@@ -66,7 +69,7 @@
         cursor: pointer;
     }
     .nav-logo {
-        width: 150px;
+        height: 50vw;
     } .navbar-vertical-visible {
         background-color: black;
         position: fixed;

@@ -1,6 +1,6 @@
 const navbarHTML = `
 <img src="images/Roohani.jpeg" alt="Roohani: Soulful indulgence by Masterchef Nayan Jyoti" 
-     class="nav-logo"  >
+     class="nav-logo">
 
 <div class="list">
      <a href='index.html' target='_self' title='Home'> Home </a>
