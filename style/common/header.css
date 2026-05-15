@@ -15,21 +15,21 @@
     justify-content: space-between;
     align-items: center;
 
-} .nav-logo img{
+} .nav-logo{
     display: inline-block;
-    width: 10vw;
+    width: clamp(100px, 12vw, 180px);
     height: auto;      
     object-fit: contain;
 
 } .list {
     display: flex;
-    gap: 75px; 
+    gap: clamp(1rem, 3vw, 4rem); 
     
 } .list a {
     color:white;
     background-color:black;
     text-decoration:none;
-    font-size: 33px;
+    font-size: clamp(1rem, 1.8vw, 1.4rem);
 
 }.list a:link{
     color:white;
@@ -38,8 +38,10 @@
     color:gray;
 
 } .list a:hover, .list a:active{
-    color:black;
-	background-color:#FFD700;
+    color: white;
+    border-bottom: 2.5px solid #C8A84B;
+    border-radius: 0px;
+    padding-bottom: 2px;
 
 } .menuButton, .list-vertical, #address, .social-links-vertical, #socialpara{
     display: none;
