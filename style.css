@@ -89,19 +89,7 @@
 		padding-top: 5px;
 		margin-bottom:5px;
 
-	} #cover-page {
-		margin-top:30px;
-		margin-bottom:100px;
-		display: flex;
-
-	} #author {
-		font-size:25px;
-		float:right;
-
-	} #quote {
-		font-size:50px;
-
-	} #service {
+	}  #service {
 		margin-left:130px;
 		position: relative;
 	
