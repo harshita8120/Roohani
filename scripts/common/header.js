@@ -1,5 +1,5 @@
 const navbarHTML = `
-<img src="images/Roohani.jpeg" alt="Roohani: Soulful indulgence by Masterchef Nayan Jyoti" 
+<img src="images/Roohani.png" alt="Roohani: Soulful indulgence by Masterchef Nayan Jyoti" 
      class="nav-logo">
 
 <div class="list">
