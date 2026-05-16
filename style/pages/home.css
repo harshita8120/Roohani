@@ -92,10 +92,10 @@
     display: block;
 
 } #info1, #info2 {
-    width: 70%;           
+    width: 80%;           
     position: absolute;
     bottom: 0;             
-    left: 4.5%;
+    left: 9%;
     transform: none;       
     margin-left: 0;       
     padding: 15px;
@@ -138,4 +138,91 @@
 }
 h2 + hr {
     margin: 8px auto;
+}
+
+/* Review section */
+
+/* .slide {
+    background-color:white;
+    color:black;
+    border-radius:12px;
+    padding:70px;
+    width: 100%;
+    flex-shrink: 0;
+    height: auto;
+    transition:scale 2s;
+    box-shadow: 6px 6px 6px black;
+    box-sizing: border-box;
+    display:flex;
+    column-gap: 20px;
+    font-size: 20px;
+
+} .slide:hover {
+    transform: scale(1.1);
+
+} .slide img {
+    height:340px; 
+    width:300px;
+    display: inline;
+} */
+
+/* Review section */
+.feedback {
+    padding: 0 5%;
+    margin-bottom: 60px;
+}
+
+.slide {
+    background: linear-gradient(135deg, #1a1710, #0f0e0b);
+    border: 1px solid rgba(200, 168, 75, 0.2);
+    color: white;
+    border-radius: 12px;
+    padding: 40px 50px;
+    width: 100%;
+    flex-shrink: 0;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    column-gap: 50px;
+    font-size: 18px;
+}
+
+.slide:hover {
+    transform: none;        /* remove the jarring scale */
+    border-color: rgba(200, 168, 75, 0.5);
+}
+
+.slide img {
+    height: 280px;
+    width: 240px;
+    object-fit: cover;
+    border-radius: 8px;
+    flex-shrink: 0;
+    border: 2px solid rgba(200, 168, 75, 0.3);
+}
+
+.slide-text {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.slide-name {
+    font-size: clamp(1.4rem, 2.5vw, 2rem);
+    font-weight: bold;
+    color: #DAA320;
+    font-family: cursive;
+}
+
+.slide-title {
+    font-size: clamp(0.85rem, 1.2vw, 1rem);
+    color: #aaa;
+    font-style: italic;
+}
+
+.slide-review {
+    font-size: clamp(0.95rem, 1.3vw, 1.1rem);
+    color: #ddd;
+    line-height: 1.7;
 }
