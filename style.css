@@ -27,56 +27,39 @@
 	background-color:#818077;
 
 }  h2 {
-		color: #DAA320;
-		font-size:40px;
-		font-family:cursive;
-		text-align: center;
+	color: #DAA320;
+	font-size:40px;
+	font-family:cursive;
+	text-align: center;
 
-	} #view {
-		text-align:right;
-		text-decoration:underline;
+} #view {
+	text-align:right;
+	text-decoration:underline;
 
-	} #submit, #book {
-		background-color:#DAA320;
-		color: black;
-		border-radius: 5px;
-		border-color:#DAA320;
-		height: 45px;
-		width: 95px;
-		font-size: 25px;
+} #submit{
+	background-color:#DAA320;
+	color: black;
+	border-radius: 5px;
+	border-color:#DAA320;
+	height: 45px;
+	width: 95px;
+	font-size: 25px;
 
-	} #submit:hover, #submit:active, #book:hover, #book:active {
-		background-color:#FC6A03;
+} #submit:hover, #submit:active{
+	background-color:#FC6A03;
 
-	} #map {
-		text-align: center;
-		padding-bottom:20px;
+} #map {
+	text-align: center;
+	padding-bottom:20px;
 
-	} #pic {
-		background-color:#ECD9BA;
-		padding-bottom: 5px;
-		padding-top: 5px;
-		margin-bottom:5px;
+} #pic {
+	background-color:#ECD9BA;
+	padding-bottom: 5px;
+	padding-top: 5px;
+	margin-bottom:5px;
 
-	}   #reserve {
-		background-color:white;
-		display:flex;
-		align-items:center;
-		font-weight: bold;
-        height:440px;
-		padding-left:50px;
-		margin-right:150px;
-		margin-left:500px;
-
-	} #picture {
-		filter: grayscale(.2);
-		transition: .3s;
-
-	} #picture:hover {
-		filter: grayscale(0);
-		transform: scale(1.2) rotate(3deg);
-
-	} #image {
+}
+  #image {
 		filter: grayscale(.2);
 		transition: .3s;
 

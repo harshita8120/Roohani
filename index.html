@@ -126,43 +126,39 @@
 <br><br>
 
 
-
-<img src="images/Reserve.png" style="height:440px; width:350px; float:left; padding-left:150px;">
-<div id="reserve">
-<form name="resForm" action="https://formspree.io/f/xrbkkzdv" onsubmit="return validateForm();" method="post">
-<table style="padding-top:30px; padding-left:30px; border-spacing:20px;">
-  <tr>
-	<td><label for="name">Name:</label> </td>
-	<td><div id="name"> <input type="text" id="name" name="Name"></div> </td>
-  </tr>
-  <tr>
-	<td><label for="email">E-mail:</label> </td>
-	<td><div id="email"><input type="email" id="email" name="E-mail"></div></td>
-  </tr>
- <tr>
-	<td><label for="date">Date:</label></td>
-	<td><div id="date"><input type="date" id="date" name="Date"></div></td>
-  </tr>
-  <tr>
-	<td><label for="time">Time:</label>
-	<td><div id="time"><input type="time" id="time" name="Time"></div></td>
-  </tr>
-  <tr>
-	<td>No. of Persons: </td>
-	<td><div id="num"><input type="number" min="1" max="15" name="No. of Persons"></div> </td>
-  </tr>
-  <tr>
-	<td> Any Preferences: </td>
-	<td> <input type="text" name="Preferences"> </td>
-  </tr>
- 
-  <tr>
-	<td colspan="4"> <button id="book" type="submit">Book</button></td>
-  </tr>
-</table>
-</form>
-
+<div id="reserve-section">
+	<img src="images/Reserve.png" id="reserve-img">
+	<form id="reserve" name="resForm" action="https://formspree.io/f/xrbkkzdv" onsubmit="return validateForm();" method="post">
+		<div class="form-row">
+			<label for="name">Name:</label>
+			<input type="text" id="name" name="Name">
+		</div>
+		<div class="form-row">
+			<label for="email">E-mail:</label>
+			<input type="email" id="email" name="E-mail">
+		</div>
+		<div class="form-row">
+			<label for="date">Date:</label>
+			<input type="date" id="date" name="Date">
+		</div>
+		<div class="form-row">
+			<label for="time">Time:</label>
+			<input type="time" id="time" name="Time">
+		</div>
+		<div class="form-row">
+			<label>No. of Persons:</label> 
+			<input type="number" min="1" max="15" name="No. of Persons">
+		</div>
+		<div class="form-row">
+			<label>Any Preferences:</label>
+			<input type="text" name="Preferences">
+		</div>
+		
+		<button id="book" type="submit">Book</button>
+  
+	</form>
 </div>
+
 
 <br>
 
