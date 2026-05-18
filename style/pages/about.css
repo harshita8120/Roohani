@@ -1,26 +1,44 @@
- #text {
+ .text {
     color:white;
-    font-size: 1.5vw;
-    margin: 0;
+    font-size: clamp(0.9rem, 1.5vw, 1.1rem);
+    margin: 0 0 1rem 0; 
     font-family: calibri;
     padding:0 1vw;
     text-align: left;
+    line-height: 1.8;
 
 } .text1, .text2 {
     display: flex;
-    padding: 1vw;
-    margin: 1vw;
+    padding: 1vw 3vw; 
+    margin: 0 0 2rem 0;
     display: flex;
     flex-direction: row;
     gap: 2vw;
     align-items: flex-start;
+} .text3 {
+    padding: 1vw 3vw;
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;   /* stacks paragraphs and figure vertically */
+    align-items: center;      /* centers the team image */
+    gap: 1.5rem;              
+}
+.text3 .text {
+    width: 100%;        /*paragraphs span full width */
+    text-align: justify;
+}
+
+.text3 figure {
+    text-align: center;
 } figcaption{
-    color: white;
-    font-size: 1.5vw;
-    font-family: calibri;
+    color: #aaa;
+    font-size: clamp(0.75rem, 1.2vw, 0.9rem); 
+    font-family: Calibri, sans-serif;
     font-style: italic;
+    text-align: center;
+    margin-top: 6px;
 } h2 {
-    font-size: 3vw;
+    font-size: clamp(1.5rem, 3vw, 2.5rem);  
 } #img1{
     height:30vw; 
     width:22vw;
@@ -31,6 +49,23 @@
     height:22vw; 
     width:38vw;
 } 
+#img1, #img2, #img3{
+    object-fit: cover; 
+    border-radius: 8px; 
+}
+h2 + hr {
+    margin: 8px auto 2rem auto;
+}
+.text-block {
+    display: flex;
+    flex-direction: column;   /* stacks paragraphs vertically */
+    gap: 1rem;                /* space between paragraphs */
+    flex: 1;                  /* takes remaining width after image */
+}
+
+.text-block .text {
+    margin: 0;                /* gap handles spacing now, not margin */
+}
 
 @media (max-width: 768px){
     .text1, .text2{
@@ -40,7 +75,7 @@
         align-items: center;
     } .text3{
         padding: 4vw;
-    }#text {
+    }.text {
         font-size: 4.5vw;
         text-align: justify;
     }  #img1{
