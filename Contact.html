@@ -9,9 +9,9 @@
 	<link rel="stylesheet" href="style.css">
 	<link rel="stylesheet" href="style/common/header.css">
 	<link rel="stylesheet" href="style/common/footer.css">
-	<link rel="stylesheet" href="style/contact.css">
+	<link rel="stylesheet" href="style/pages/contact.css">
 
-	<link rel="icon" href="Roohani.jpeg">
+	<link rel="icon" href="Roohani.png">
 
 	<script src="scripts/utils/formValidation.js"></script>
 	<script src="scripts/common/header.js" defer></script>
@@ -27,55 +27,43 @@
 
 <div class="navbar-container"></div>
 
-<br><br><br><br><br><br>
-
-<p id="title"><b>Let's Connect</b></p>
-
 <div class="contact-container">
 	<div class="form-wrapper">
 		
-		<h2><center> Get in touch with us! </center></h2>
+		<h2>Get in touch with us!</h2>
 
+		<div class="contact-form-layout">
+			<img src="images/tman.png" alt="contact" class="responsive-img">
+			<form name="contactForm"  action="https://formspree.io/f/xeokgwbk" method="post" onsubmit="return msgFunction();">
+				<div class="form-row">
+					<label for="cname">Name:</label>
+					<input type="text" id="cname" name="Name" autocomplete="name">
+				</div>
+				<div class="form-row">
+					<label for="cmail">E-mail:</label>
+					<input type="text" id="cmail" name="E-mail" autocomplete="email">
+				</div>
+				<div class="form-row">
+					<label for="csubject">You're interested in:</label>
+					<input list="subject" id="csubject" name="Subject" autocomplete="off">
+					<datalist id="subject">
+						<option value="Reservation">
+						<option value="Feedback">
+						<option value="Suggestion">
+						<option value="Query">
+						<option value="Collaboration">
+						<option value="Others">
+					</datalist>
+				</div>
+				<div class="form-row form-row-textarea">
+					<label for="cmsg">Message:</label>
+					<textarea id="cmsg" name="Message" rows="10" cols="25" name="message">Type your message here...</textarea>
 
-		<form name="contactForm"  action="https://formspree.io/f/xeokgwbk" method="post" onsubmit="return msgFunction();">
-		<table>
-			<tr>
-			<td rowspan="5"><img src="images/tman.png" alt="contact" class="responsive-img"></td>
-			<td><label for="name"><b>Name:</b></label></td>
-			<td><div id="name"><input type="text" id="name" name="Name">
-				</div></td>
-		</tr>
-
-		<tr>
-			<td> <label for="email"><b>E-mail:</b></label></td>
-			<td><div id="name"><input type="text" id="email" name="E-mail"> 
-				</div></td>
-		</tr>
-
-		<tr>
-			<td> <label><b> You're interested in: </b></label> </td>
-			<td><div id="name"><input list="subject" name="Subject">
-				<datalist id="subject">
-				<option value="Reservation">
-				<option value="Feedback">
-				<option value="Suggestion">
-				<option value="Query">
-				<option value="Collaboration">
-				<option value="Others">
-				</div></td>
-		</tr>
+				</div>
+				<button type="submit" id="submit">Submit</button>
+			</form>
+		</div>
 		
-		<tr>
-			<td> <label for="msg"><b>Message:</b></label> </td>
-			<td> <textarea name="Message" rows="10" cols="25" name="message">Type your message here...</textarea> </td>
-		</tr>
-
-		<tr>
-			<td colspan="2"> <button type="submit" id="submit">Submit</button></td>
-		</tr>
-
-		</table>
-		</form>
 		
 	</div>
 

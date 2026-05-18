@@ -63,3 +63,18 @@ crossBtn.addEventListener('click', () => {
      document.querySelector('.navbar-vertical').classList.add('navbar-vertical-hide');
 });
 
+//Fading away of navbar while scrolling
+let lastScrollY = 0;
+
+window.addEventListener('scroll', () => {
+    const navbar = document.querySelector('.navbar-container');
+    const currentScrollY = window.scrollY;
+
+    if (currentScrollY > 80 && currentScrollY > lastScrollY) {
+        navbar.classList.add('navbar-hidden');      /* scrolling down → hide */
+    } else {
+        navbar.classList.remove('navbar-hidden');   /* scrolling up → show */
+    }
+
+    lastScrollY = currentScrollY;
+});

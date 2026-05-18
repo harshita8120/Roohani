@@ -36,19 +36,8 @@
 	text-align:right;
 	text-decoration:underline;
 
-} #submit{
-	background-color:#DAA320;
-	color: black;
-	border-radius: 5px;
-	border-color:#DAA320;
-	height: 45px;
-	width: 95px;
-	font-size: 25px;
-
-} #submit:hover, #submit:active{
-	background-color:#FC6A03;
-
-} #map {
+} 
+ #map {
 	text-align: center;
 	padding-bottom:20px;
 

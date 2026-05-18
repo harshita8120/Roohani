@@ -1,124 +1,162 @@
-/* 1. The Main Wrapper: Uses CSS Grid */
+/* Contact page layout */
 .contact-container {
-   display: grid;
-    /* First col (Form) gets 70%, Second col (Sidebar) gets 30% */
-    grid-template-columns: 7fr 3fr; 
+    display: grid;
+    grid-template-columns: 7fr 3fr;
     gap: 30px;
-    width: 90%;
-    max-width: 1400px;
-    margin: 50px auto;
+    width: 85%;
+    max-width: 1200px;
+    margin: 40px auto 60px auto;
     align-items: stretch;
 }
 
-/* --- 2. Form Styling --- */
+/* Form wrapper */
 .form-wrapper {
-   background-color: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-    text-align:center;
+    background: linear-gradient(135deg, #1a1710, #0f0e0b);
+    border: 1px solid rgba(200, 168, 75, 0.2);
+    padding: 40px;
+    border-radius: 12px;
+    text-align: center;
 }
 
-.form-wrapper td p {
-    margin: 0; /* Forces any paragraph inside the table to have zero gap */
+.form-wrapper h2 {
+    margin-bottom: 30px;
+}
+
+/* Image + form side by side */
+.contact-form-layout {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    text-align: left;
 }
 
 .responsive-img {
-    width: 100%;
-    max-width: 250px;  /* Limits image width */
-    height: 100%;
-    object-fit: cover;
-    display: block;
-    margin: 0 auto;
+    width: 220px;
+    flex-shrink: 0;
+    height: auto;
+    border-radius: 8px;
+    opacity: 0.85;
+    align-self: center;
 }
 
-.form-wrapper table {
-    width: 100%;
-    border-collapse: collapse;
-    table-layout: fixed; /* This stops the image from exploding the layout */
-}
-/* Define Table Column Widths */
-.form-wrapper td { padding: 10px; } /* Spacing between cells */
-
-/* Column 1: Image */
-.form-wrapper td:first-child { width: 35%; vertical-align: middle; }
-/* Column 2: Labels */
-.form-wrapper td:nth-child(2) { width: 15%; text-align: right; font-weight: bold; }
-/* Column 3: Inputs */
-
-.form-wrapper td:last-child { width: 50%; }
-
-/* Input Styling */
-.form-wrapper input, .form-wrapper select, .form-wrapper textarea {
-    width: 100%;
-    padding: 8px;
-    box-sizing: border-box;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+.contact-form-layout form {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
 }
 
-/* 3. Right Side: The Sidebar */
+/* Form rows */
+.form-wrapper .form-row {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.form-wrapper .form-row label {
+    color: #aaa;
+    font-size: 1rem;
+    width: 130px;
+    text-align: right;
+    flex-shrink: 0;
+}
+
+.form-wrapper .form-row input,
+.form-wrapper .form-row textarea {
+    flex: 1;
+    background: #0a0a0a;
+    border: 1px solid rgba(200, 168, 75, 0.25);
+    border-radius: 6px;
+    color: white;
+    padding: 10px 14px;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.2s;
+    font-family: inherit;
+}
+
+.form-wrapper .form-row input:focus,
+.form-wrapper .form-row textarea:focus {
+    border-color: #DAA320;
+}
+
+.form-row-textarea {
+    align-items: flex-start;
+}
+
+.form-row-textarea label {
+    padding-top: 10px;
+}
+
+#submit {
+    align-self: center;
+    background-color: #DAA320;
+    color: black;
+    border: none;
+    border-radius: 6px;
+    height: 45px;
+    width: 110px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background 0.2s;
+    margin-top: 8px;
+}
+
+#submit:hover, #submit:active {
+    background-color: #FC6A03;
+}
+
+/* Sidebar */
 .sidebar-wrapper {
     display: flex;
     flex-direction: column;
-    height: 100%; /* Matches form height */
     gap: 20px;
-
-    text-align:center;
-    color:white;
-    font-size:25px;
+    height: 100%;
 }
 
-
-
-/* 4. The Sidebar Boxes (Email/Phone) */
-.info-box {
-    background-color: #f8f8f8;
-    padding: 20px;
-    text-align: center;
+.contactBox {
+    border: 1px solid rgba(200, 168, 75, 0.3);
     border-radius: 10px;
-    border: 1px solid #eee;
+    padding: 20px 16px;
+    background: linear-gradient(135deg, #1a1710, #0f0e0b);
+    color: white;
+    font-size: 1rem;
+    line-height: 1.8;
+    text-align: center;
+    transition: transform 0.3s, border-color 0.2s;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+    box-sizing: border-box;
 }
 
-/* 5. The Map Box */
+.contactBox:hover {
+    transform: scale(1.05);
+    border-color: #DAA320;
+}
+
 .map-box {
-    flex-grow: 1; /* Stretches to fill remaining height */
-    background: #eee;
+    flex-grow: 1;
     border-radius: 10px;
     overflow: hidden;
-    min-height: 250px; 
+    min-height: 250px;
     position: relative;
-    border: 2px solid white;
-    box-shadow: 6px 6px 6px black;
+    border: 1px solid rgba(200, 168, 75, 0.3);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.4);
 }
 
 .map-box iframe {
-   position: absolute;
+    position: absolute;
     top: 0; left: 0;
     width: 100%; height: 100%;
     border: 0;
 }
 
-/* Mobile Fix */
+/* Mobile */
 @media (max-width: 900px) {
     .contact-container { grid-template-columns: 1fr; }
     .map-box { min-height: 300px; }
 }
 
-
-.contactBox {
-    border:2px solid white;
-    border-radius:10px;
-    padding:10px;
-    background-color:black;
-    width:100%;
-    transition: transform 0.3s ease;
-    box-sizing: border-box;
-    box-shadow: 6px 6px 6px black;
-
-} .contactBox:hover {
-    transform: scale(1.1);
-    
-
+@media (max-width: 700px) {
+    .contact-form-layout { flex-direction: column; }
+    .responsive-img { width: 160px; }
 }
-

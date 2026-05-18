@@ -7,10 +7,11 @@
     right:0;
     margin:0;
     padding:3vw;
-    position:absolute;
+    position:fixed;
     margin-bottom:50px;
     box-sizing: border-box; /*If I set padding, include it inside the 100% width, don't add it to the outside*/
-
+    z-index: 1000;  
+    transition: opacity 0.4s ease, transform 0.4s ease; 
     display: flex;
     justify-content: space-between;
     align-items: center;
