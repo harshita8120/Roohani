@@ -31,13 +31,13 @@ const navbarHTML = `
           <div class="social-links-vertical">
 
                <a href="https://www.instagram.com/roohanibynayanjyoti?igsh=MXJidzBjYm1zN2tqZQ==" title="roohanibynayanjyoti" target="_blank">
-               <img src="images/Instagram_logo_2022.svg.png" alt="inst1"></a>
+               <img src="/images/Instagram_logo_2022.svg.png" alt="inst1"></a>
 
                <a href="https://www.facebook.com/nayan.saikia.5680/" title="Nayanjyoti Saikia" target="_blank">
-               <img src="images/facebook.png" alt="fb"></a>
+               <img src="/images/facebook.png" alt="fb"></a>
 
                <a href="https://www.instagram.com/the_travellercook?igsh=MWYzeWQ3dm50c3Rzeg==" title="the_travellercook" target="_blank">
-               <img src="images/Instagram_logo_2022.svg.png" alt="inst2" ></a>
+               <img src="/images/Instagram_logo_2022.svg.png" alt="inst2" ></a>
 
           </div>
 

@@ -61,11 +61,12 @@
     .menuButton {
         display: block;
         color:white;
-        font-size: 40px;
+        font-size: 7vw; 
+        transform: translateY(-50%); 
         display: block;
         cursor: pointer;
         position: absolute;
-        top: 12vw;
+        top: 50%;
         right: 6vw;
     } .navbar-vertical-invisible, .list-vertical, #address, .social-links-vertical, #socialpara{
         display: none;
@@ -76,7 +77,9 @@
         cursor: pointer;
     }
     .nav-logo {
-        height: 50vw;
+        height: auto;
+        width: 35vw; 
+        max-width: 140px;
     } .navbar-vertical-visible {
         background-color: black;
         position: fixed;
@@ -96,13 +99,13 @@
     } .navbar-vertical-visible .crossButton{
         color: white;
         position: absolute;
-        top: 14vw;
-        right: 10vw;
+        top: 5vw;
+        right: 6vw;
         cursor: pointer;
         z-index: 2;
         display: block;
-        font-size: 12vw;
-        transform: scale(1.5);
+        font-size: 7vw;
+        transform: none;
     } .navbar-vertical-visible .list-vertical{
         display: flex;
         flex-direction: column;
@@ -111,24 +114,31 @@
         gap:5px;
         margin-top: 14vw;
         
-    } .list-vertical a{
-        margin-top: 10vw;
-        font-size: 13vw;
+    } .list-vertical a {
+        margin-top: 5vw;        
+        font-size: 7vw;        
+    
     } .social-links-vertical img{
-        width:13vw;
-        height:13vw;
-        margin: 3.8vw;
+        width: 8vw;        
+        height: 8vw;
+        margin: 2vw;
     } .navbar-vertical-visible #socialPara {
         color: white;
-        font-size: 12vw;
+        font-size: 6vw;
         display: block;
-        margin: 6vw 0;
+        margin: 3vw 0;
         font-family: Calibri;
     } .navbar-vertical-visible #address{
         color: white;
-        font-size: 8vw;
+        font-size: 4vw;
         display: block;
-        margin: 6vw 0;
+        margin: 3vw 0;
         font-family: Calibri;
+    }
+    .navbar-vertical-visible .social-links-vertical {
+        display: flex;          /* ← explicitly show it when menu is open */
+        justify-content: center;
+        gap: 4vw;
+        margin: 2vw 0;
     }
 }
