@@ -1,0 +1,28 @@
+.img-row img{
+    height:450px; 
+    width:300px; 
+    margin-right:50px
+}
+.vid-row1 video{
+    height:576px; 
+    width:324px; 
+    margin-right:50px;
+}
+.vid-row2 video{
+    height:576px; 
+    width:324px;
+}
+.gallery-rows {
+	padding-bottom: 5px;
+	padding-top: 5px;
+	margin-bottom:50px;
+    width: 100%;
+    overflow: hidden;
+
+}
+.gallery-rows img {
+    width: 265px; 
+    height:265px;
+    border-radius: 8px; 
+}
+ 
