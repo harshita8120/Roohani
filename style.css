@@ -27,13 +27,7 @@
 } a:hover, a:active {
 	background-color:#818077;
 
-}  h2 {
-	color: #DAA320;
-	font-size:40px;
-	font-family:cursive;
-	text-align: center;
-
-} #view {
+}   #view {
 	text-align:right;
 	text-decoration:underline;
 

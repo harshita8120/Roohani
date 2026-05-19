@@ -1,28 +1,42 @@
-.img-row img{
-    height:450px; 
-    width:300px; 
-    margin-right:50px
+/* Section spacing */
+.img-row, .vid-row1, .vid-row2 {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 0 5%;
+    margin-bottom: 3rem;
 }
-.vid-row1 video{
-    height:576px; 
-    width:324px; 
-    margin-right:50px;
+
+/* Ingredient images */
+.img-row img {
+    height: 450px;
+    width: 300px;
+    object-fit: cover;
+    border-radius: 12px;
+    flex-shrink: 0;
 }
-.vid-row2 video{
-    height:576px; 
-    width:324px;
+
+/* Videos */
+.vid-row1 video,
+.vid-row2 video {
+    height: auto;
+    width: clamp(260px, 28vw, 380px);
+    border-radius: 12px;
+    flex-shrink: 0;
 }
+
+/* Scrolling gallery rows */
 .gallery-rows {
-	padding-bottom: 5px;
-	padding-top: 5px;
-	margin-bottom:50px;
+    padding: 5px 0;
+    margin-bottom: 50px;
     width: 100%;
     overflow: hidden;
+}
 
-}
 .gallery-rows img {
-    width: 265px; 
-    height:265px;
-    border-radius: 8px; 
+    width: 265px;
+    height: 265px;
+    border-radius: 8px;
 }
- 

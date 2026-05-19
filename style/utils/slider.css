@@ -2,17 +2,30 @@
     display: flex;
     gap: 16px;
     width: max-content;        /* expands to fit all images in one row */
-    animation: scroll-gallery 30s linear infinite;
+}
+
+.slider-track1 {
+    animation: scroll-RL 30s linear infinite;
+}
+
+.slider-track2 {
+    animation: scroll-LR 30s linear infinite;
 }
 
 .gallery-track:hover {
     animation-play-state: paused;   /* stops on any hover */
 }
 
-@keyframes scroll-gallery {
+@keyframes scroll-RL {
     0%   { transform: translateX(0); }
-    100% { transform: translateX(-50%); }  /* -50% moves exactly one full set */
+    100% { transform: translateX(-50%); }
 }
+
+@keyframes scroll-LR {
+    0%   { transform: translateX(-50%); }
+    100% { transform: translateX(0); }
+}
+
 .gallery-img {
     object-fit: cover;
     flex-shrink: 0;
@@ -24,3 +37,5 @@
     z-index: 1;
     position: relative;
 }
+
+

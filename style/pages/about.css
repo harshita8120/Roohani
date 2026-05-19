@@ -37,8 +37,6 @@
     font-style: italic;
     text-align: center;
     margin-top: 6px;
-} h2 {
-    font-size: clamp(1.5rem, 3vw, 2.5rem);  
 } #img1{
     height:30vw; 
     width:22vw;
@@ -52,9 +50,6 @@
 #img1, #img2, #img3{
     object-fit: cover; 
     border-radius: 8px; 
-}
-h2 + hr {
-    margin: 8px auto 2rem auto;
 }
 .text-block {
     display: flex;
@@ -92,8 +87,5 @@ h2 + hr {
         object-fit: cover;
     } figcaption{
         font-size: 5vw;
-    } h2 {
-        font-size: 7vw;
-        text-align: center;
     }
 }
