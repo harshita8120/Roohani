@@ -7,22 +7,26 @@
     margin-bottom: 3rem;
 }
 
-.dish {
+.current-slide {
+    width: 260px;
     height: 420px;
-    width: 250px;
-    object-fit: contain;    /* PNGs have built-in card design — contain shows full card */
-    flex-shrink: 0;
-    transition: transform 0.3s;
 }
 
-.dish:hover {
-    transform: scale(1.08);
+.side-slide {
+    width: 200px;
+    height: 360px;
+
 }
 
 
 @media (max-width: 768px) {
-    .dish {
+    .current-slide {
         height: 320px;
         width: 190px;
+    }
+    .side-slide {
+        width: 170px;
+        height: 300px;
+
     }
 }

@@ -1,0 +1,67 @@
+.carousel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 3rem;
+    padding: 20px 0;
+}
+
+.c-prev, .c-next {
+    width: 220px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.45;
+    transform: scale(0.82);
+    transition: opacity 0.4s, transform 0.4s;
+    overflow: hidden;
+}
+
+.c-current {
+    width: 280px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+
+.current-slide {
+    object-fit: contain;
+    transition: transform 0.4s;
+}
+
+.current-slide:hover{
+    transform: scale(1.08);
+}
+
+.side-slide {
+    object-fit: contain;
+    transition: transform 0.4s;
+}
+
+.carousel-btn {
+    background: transparent;
+    border: 1px solid rgba(200, 168, 75, 0.5);
+    color: #DAA320;
+    font-size: 1.4rem;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    cursor: pointer;
+    flex-shrink: 0;
+    transition: background 0.2s, border-color 0.2s;
+    z-index: 2;
+}
+
+.carousel-btn:hover {
+    background: rgba(200, 168, 75, 0.15);
+    border-color: #DAA320;
+}
+
+@media (max-width: 768px) {
+    .c-prev, .c-next { width: 130px; }
+    .c-current { width: 180px; }
+    .main-dish { width: 160px; height: 280px; }
+    .side-dish { width: 110px; height: 220px; }
+    .carousel-btn { width: 36px; height: 36px; font-size: 1rem; }
+}
