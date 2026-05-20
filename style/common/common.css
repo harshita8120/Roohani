@@ -6,11 +6,18 @@
     margin-bottom: 10px;
 }
 
+hr {
+    width: 50%;
+    border: 1px solid #DAA320;
+}
+
 h2 {
 	color: #DAA320;
 	font-size: clamp(1.5rem, 3vw, 2.5rem); 
 	font-family:cursive;
 	text-align: center;
+    border: none;
+	width: 100%;
 
 }
 

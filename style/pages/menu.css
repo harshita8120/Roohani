@@ -1,0 +1,28 @@
+.dish-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 0 5%;
+    margin-bottom: 3rem;
+}
+
+.dish {
+    height: 420px;
+    width: 250px;
+    object-fit: contain;    /* PNGs have built-in card design — contain shows full card */
+    flex-shrink: 0;
+    transition: transform 0.3s;
+}
+
+.dish:hover {
+    transform: scale(1.08);
+}
+
+
+@media (max-width: 768px) {
+    .dish {
+        height: 320px;
+        width: 190px;
+    }
+}

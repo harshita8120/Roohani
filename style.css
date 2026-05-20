@@ -32,17 +32,7 @@
 	text-decoration:underline;
 
 } 
- #dish {
-		transition: .3s;
-
-	} #dish:hover {
-		transform: scale(1.1);
-
-	} form {
-		font-size:20px;
-		text-decoration: bold;
-	} hr {
-		border: 1px outset #DAA320;
-		color:#DAA320;
-		width: 50%;
-	}
+form {
+	font-size:20px;
+	text-decoration: bold;
+}
