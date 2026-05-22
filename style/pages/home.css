@@ -304,3 +304,28 @@
     height: 260px;
     border-radius: 8px;
 }
+
+/* View more button */
+#gallery-cta {
+    text-align: center;
+    margin: 1.5rem 0 2rem 0;
+}
+
+#gallery-cta a {
+    background: transparent;
+    border: 1px solid rgba(200, 168, 75, 0.5);
+    color: #DAA320;
+    font-size: 1rem;
+    font-family: Calibri, sans-serif;
+    letter-spacing: 0.15em;
+    padding: 12px 32px;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: background 0.2s, border-color 0.2s;
+}
+
+#gallery-cta a:hover {
+    background: rgba(200, 168, 75, 0.1);
+    border-color: #DAA320;
+    color: #DAA320;
+}
