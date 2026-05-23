@@ -151,12 +151,62 @@
 }
 
 /* Mobile */
-@media (max-width: 900px) {
-    .contact-container { grid-template-columns: 1fr; }
-    .map-box { min-height: 300px; }
-}
+@media (max-width: 768px) {
+    .contact-container {
+        grid-template-columns: 1fr;
+        width: 92%;
+        margin: 20px auto 40px auto;
+        gap: 20px;
+    }
 
-@media (max-width: 700px) {
-    .contact-form-layout { flex-direction: column; }
-    .responsive-img { width: 160px; }
+    .responsive-img {
+        display: none;              /* hide decorative image */
+    }
+
+    .contact-form-layout {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .form-wrapper {
+        padding: 24px 16px;         /* reduce padding on small screens */
+    }
+
+    .form-wrapper .form-row {
+        flex-direction: column;     /* label above input */
+        align-items: flex-start;
+        gap: 6px;
+    }
+
+    .form-wrapper .form-row label {
+        width: auto;
+        text-align: left;
+        font-size: 0.85rem;
+    }
+
+    .form-wrapper .form-row input,
+    .form-wrapper .form-row textarea {
+        width: 100%;
+    }
+
+    .form-row-textarea {
+        align-items: flex-start;
+    }
+
+    #submit {
+        width: 100%;
+    }
+
+    .sidebar-wrapper {
+        width: 100%;
+    }
+
+    .contactBox {
+        font-size: 0.9rem;
+        padding: 16px;
+    }
+
+    .map-box {
+        min-height: 220px;
+    }
 }
