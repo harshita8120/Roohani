@@ -81,16 +81,16 @@
 
     .img-row img {
         height: auto;
-        width: clamp(150px, 28vw, 300px);
+        width: clamp(95px, 28vw, 170px);
     }
 
     /* Video carousel */
     .carousel[data-type="video"] .current-slide {
-        width: clamp(140px, 42vw, 240px);
+        width: clamp(110px, 38vw, 180px);
     }
 
     .carousel[data-type="video"] .side-slide {
-        width: clamp(80px, 22vw, 130px);
+        width: clamp(55px, 16vw, 90px);
     }
 
     /* Scrolling gallery */
