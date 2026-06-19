@@ -4,10 +4,10 @@ const navbarHTML = `
 
 <div class="list">
      <a href='index.html' target='_self'> Home </a>
-     <a href='Menu.html' target='_blank'> Menu </a>
-     <a href='Gallery.html' target='_blank'> Gallery </a> 
-     <a href='About.html' target='_blank'> About </a>
-     <a href='Contact.html' target='_blank'> Contact </a> 
+     <a href='Menu.html' target='_self'> Menu </a>
+     <a href='Gallery.html' target='_self'> Gallery </a> 
+     <a href='About.html' target='_self'> About </a>
+     <a href='Contact.html' target='_self'> Contact </a> 
 </div>
 
 <i class="ri-menu-3-fill menuButton"></i>
@@ -17,13 +17,13 @@ const navbarHTML = `
      <div class="list-vertical">
           <a href='index.html' target='_self' title='Home'> Home </a>
           <hr>
-          <a href='Menu.html' target='_blank' title='Menu'> Menu </a>
+          <a href='Menu.html' target='_self' title='Menu'> Menu </a>
           <hr>
-          <a href='Gallery.html' target='_blank' title='Gallery'> Gallery </a> 
+          <a href='Gallery.html' target='_self' title='Gallery'> Gallery </a> 
           <hr>
-          <a href='About.html' target='_blank' title='About'> About </a>
+          <a href='About.html' target='_self' title='About'> About </a>
           <hr>
-          <a href='Contact.html' target='_blank' title='Contact'> Contact </a> 
+          <a href='Contact.html' target='_self' title='Contact'> Contact </a> 
           <hr>
 
           <p id="socialPara">Follow us: </p>
