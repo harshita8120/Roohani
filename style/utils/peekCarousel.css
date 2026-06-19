@@ -1,9 +1,12 @@
 .carousel {
     display: flex;
+    flex-wrap: nowrap;
     align-items: center;
     justify-content: center;
+    gap: 0;
     margin-bottom: 3rem;
     padding: 20px 0;
+    overflow: hidden;
 }
 
 .c-prev, .c-next {

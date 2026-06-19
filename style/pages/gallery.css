@@ -1,5 +1,5 @@
 /* Section spacing */
-.img-row, .vid-row1, .vid-row2 {
+.img-row{
     display: flex;
     justify-content: center;
     align-items: flex-start;
