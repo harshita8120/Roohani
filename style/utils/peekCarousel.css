@@ -67,4 +67,31 @@
     .main-dish { width: 160px; height: 280px; }
     .side-dish { width: 110px; height: 220px; }
     .carousel-btn { width: 36px; height: 36px; font-size: 1rem; }
+
+    .c-prev, .c-next {
+        display: none;          /* hide side peeks entirely */
+    }
+
+    .c-current {
+        width: 90vw;            /* current slide takes most of the screen */
+        max-width: 320px;
+    }
+
+    .carousel {
+        position: relative;     /* so arrows can overlay */
+        gap: 0;
+    }
+
+    .carousel-btn {
+        position: absolute;     /* overlay on top of the image */
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 3;
+        background: rgba(0, 0, 0, 0.5);   /* semi-transparent so it sits on image */
+        backdrop-filter: blur(4px);
+    }
+
+    .prev-btn { left: 4px; }
+    .next-btn { right: 4px; }
+
 }

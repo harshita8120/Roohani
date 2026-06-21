@@ -36,6 +36,28 @@ function buildCarousel(container, items, renderItem) {
         index = (index + 1) % items.length;
         update();
     });
+
+    let touchStartX = 0;
+
+    container.addEventListener('touchstart', (e) => {
+        touchStartX = e.touches[0].clientX;
+    });
+
+    container.addEventListener('touchend', (e) => {
+        const touchEndX = e.changedTouches[0].clientX;
+        const diff = touchStartX - touchEndX;
+
+        if (Math.abs(diff) > 40) {   // minimum swipe distance
+            if (diff > 0) {
+                // swiped left → next
+                index = (index + 1) % items.length;
+            } else {
+                // swiped right → prev
+                index = (index - 1 + items.length) % items.length;
+            }
+            update();
+        }
+    });
 }
 
 function renderImage(item, sizeClass) {
