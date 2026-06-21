@@ -1,4 +1,9 @@
 const gallerySections = {
+    ingredients: [
+        { src: "images/1.png", alt: "wild garlic chives" },
+        { src: "images/2.png", alt: "bamboo shoot" },
+        { src: "images/3.png", alt: "man dhania" }
+    ],
     chefstable: [
         { src: "videos/VIDEO_9bf5e7f7-bd50-4128-bba8-ad4eb873706f.mp4", alt: "Chef's Table 1" },
         { src: "videos/20241118123544_instagram_4.mp4", alt: "Chef's Table 2" },
