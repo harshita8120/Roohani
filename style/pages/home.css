@@ -413,4 +413,20 @@
     #author {
         font-size: clamp(0.85rem, 3.5vw, 1rem);
     }
+
+     /* Services — stack vertically */
+    #row {
+        flex-direction: column;
+        width: 90%;
+        gap: 60px;              /* space between the two cards */
+    }
+
+    #col {
+        flex-basis: 100%;       /* each card takes full width */
+        width: 100%;
+    }
+
+    #col img {
+        height: 260px;          /* shorter on mobile */
+    }
 }
