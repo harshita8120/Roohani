@@ -232,6 +232,10 @@
     text-align: left;
 }
 
+/* Hide trigger on desktop, show full section */
+#reserve-trigger { display: none; }
+#reserve-overlay { display: none; }
+
 .form-row {
     display: flex;
     align-items: center;
@@ -466,5 +470,109 @@
     .slide-review {
         font-size: clamp(0.8rem, 3.5vw, 0.95rem);
         line-height: 1.6;
+    }
+
+    /* Hide desktop layout */
+    #reserve-section { display: none; }
+
+    /* Show trigger image */
+    #reserve-trigger {
+        display: flex;
+        justify-content: center;
+        margin: 0 auto 40px auto;
+    }
+
+    #reserve-img {
+        width: clamp(180px, 55vw, 260px);
+        height: auto;
+        border-radius: 12px;
+        cursor: pointer;
+        transition: transform 0.2s;
+    }
+
+    #reserve-img:active {
+        transform: scale(0.97);
+    }
+
+    /* Dark overlay */
+    #reserve-overlay {
+        display: none;
+        position: fixed;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.75);
+        z-index: 999;
+        align-items: flex-end;
+    }
+
+    #reserve-overlay.open {
+        display: flex;
+    }
+
+    /* Drawer */
+    #reserve-drawer {
+        width: 100%;
+        background: #1a1710;
+        border: 1px solid rgba(200, 168, 75, 0.3);
+        border-radius: 18px 18px 0 0;
+        padding: 16px 20px 40px;
+        position: relative;
+        transform: translateY(100%);
+        transition: transform 0.35s cubic-bezier(0.32, 0.72, 0, 1);
+        max-height: 90vh;
+        overflow-y: auto;
+    }
+
+    #reserve-overlay.open #reserve-drawer {
+        transform: translateY(0);
+    }
+
+    #drawer-handle {
+        width: 36px;
+        height: 4px;
+        background: rgba(200, 168, 75, 0.4);
+        border-radius: 2px;
+        margin: 0 auto 16px;
+    }
+
+    #drawer-close {
+        position: absolute;
+        top: 14px;
+        right: 16px;
+        background: transparent;
+        border: none;
+        color: #DAA320;
+        font-size: 1.1rem;
+        cursor: pointer;
+        padding: 4px 8px;
+    }
+
+    #reserve-drawer h3 {
+        text-align: center;
+        color: #DAA320;
+        font-family: cursive;
+        font-size: 1.3rem;
+        margin-bottom: 20px;
+    }
+
+    /* Form rows — stacked on mobile */
+    #reserve-drawer .form-row {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 6px;
+    }
+
+    #reserve-drawer .form-row label {
+        width: auto;
+        text-align: left;
+        font-size: 0.85rem;
+    }
+
+    #reserve-drawer .form-row input {
+        width: 100%;
+    }
+
+    #reserve-drawer #book {
+        width: 100%;
+        margin-top: 12px;
     }
 }
