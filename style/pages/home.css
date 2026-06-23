@@ -429,4 +429,42 @@
     #col img {
         height: 260px;          /* shorter on mobile */
     }
+
+    /* Feedback slider */
+    .feedback {
+        padding: 0 4%;
+    }
+
+    .slide {
+        flex-direction: column;     /* image above text */
+        padding: 20px 16px;
+        column-gap: 0;
+        row-gap: 12px;
+        align-items: center;
+        text-align: center;
+    }
+
+    .slide img {
+        width: 90px;
+        height: 90px;
+        border-radius: 50%;         /* circular avatar */
+        flex-shrink: 0;
+    }
+
+    .slide-text {
+        text-align: center;
+    }
+
+    .slide-name {
+        font-size: clamp(1rem, 5vw, 1.3rem);
+    }
+
+    .slide-title {
+        font-size: clamp(0.7rem, 3vw, 0.85rem);
+    }
+
+    .slide-review {
+        font-size: clamp(0.8rem, 3.5vw, 0.95rem);
+        line-height: 1.6;
+    }
 }

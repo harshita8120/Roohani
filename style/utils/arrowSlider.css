@@ -39,3 +39,18 @@ button.prev:hover, button.next:hover {
 
 button.prev { left: 10px; }
 button.next { right: 10px; }
+
+@media (max-width: 768px) {
+    .slider {
+        max-width: 100%;
+    }
+
+    .slider button {
+        width: 32px;
+        height: 32px;
+        font-size: 0.85rem;
+    }
+
+    button.prev { left: 4px; }
+    button.next { right: 4px; }
+}
