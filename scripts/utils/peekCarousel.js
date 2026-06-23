@@ -1,3 +1,5 @@
+//Non-auto movement arrow slider - used in menu and gallery
+
 function buildCarousel(container, items, renderItem) {
     let index = 0;
 
