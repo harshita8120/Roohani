@@ -44,8 +44,8 @@
 
 .carousel-btn {
     background: transparent;
-    border: 1px solid rgba(200, 168, 75, 0.5);
-    color: #DAA320;
+    border: 1px solid var(--gold-dim);
+    color: var(--gold);
     font-size: 1.4rem;
     width: 44px;
     height: 44px;
@@ -58,7 +58,7 @@
 
 .carousel-btn:hover {
     background: rgba(200, 168, 75, 0.15);
-    border-color: #DAA320;
+    border-color: var(--gold-dim);
 }
 
 @media (max-width: 768px) {

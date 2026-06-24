@@ -31,20 +31,20 @@
     gap: clamp(1rem, 3vw, 4rem); 
     
 } .list a {
-    color:white;
+    color:var(--text-body);
     background-color:black;
     text-decoration:none;
     font-size: clamp(1rem, 1.8vw, 1.4rem);
 
 }.list a:link{
-    color:white;
+    color:var(--text-body);
    
 } .list a:visited{
     color:gray;
 
 } .list a:hover, .list a:active{
-    color: white;
-    border-bottom: 2.5px solid #C8A84B;
+    color: var(--text-body);
+    border-bottom: 2.5px solid var(--gold-dim);
     border-radius: 0px;
     padding-bottom: 2px;
 
@@ -60,7 +60,7 @@
     }
     .menuButton {
         display: block;
-        color:white;
+        color:var(--text-body);
         font-size: 7vw; 
         transform: translateY(-50%); 
         display: block;
@@ -97,7 +97,7 @@
         transition: transform 0.3s ease-in-out;
         transform: translateX(100%);
     } .navbar-vertical-visible .crossButton{
-        color: white;
+        color: var(--text-body);
         position: absolute;
         top: 5vw;
         right: 6vw;
@@ -123,13 +123,13 @@
         height: 8vw;
         margin: 2vw;
     } .navbar-vertical-visible #socialPara {
-        color: white;
+        color: var(--text-body);
         font-size: 6vw;
         display: block;
         margin: 3vw 0;
         font-family: Calibri;
     } .navbar-vertical-visible #address{
-        color: white;
+        color: var(--text-body);
         font-size: 4vw;
         display: block;
         margin: 3vw 0;

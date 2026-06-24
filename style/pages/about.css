@@ -1,5 +1,5 @@
  .text {
-    color:white;
+    color:var(--text-body);
     font-size: clamp(0.9rem, 1.5vw, 1.1rem);
     margin: 0 0 1rem 0; 
     font-family: calibri;

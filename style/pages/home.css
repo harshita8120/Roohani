@@ -45,7 +45,7 @@
     left: 50%;              /* horizontally centered in collage */
     transform: translate(-50%, -50%);
     width: 80%; 
-    color: white;
+    color: var(--text-body);
     text-align: center;
     text-shadow: 0 0 25px #FFE768;
     font-style: italic;
@@ -63,7 +63,7 @@
 .quote hr {
     width: 60%;           /* doesn't span full quote width */
     margin: 10px auto;    /* auto centers it horizontally */
-    border: 1px solid #FFD700;
+    border: 1px solid var(--gold-dim);
 }
 
 /*Service section*/
@@ -101,7 +101,7 @@
     box-sizing: border-box;
     text-align: center;
     background: black;
-    color: white;
+    color: var(--text-body);
     border-radius: 0 0 3px 3px;
 }
 .info h3 {
@@ -147,7 +147,7 @@
 .slide {
     background: linear-gradient(135deg, #1a1710, #0f0e0b);
     border: 1px solid rgba(200, 168, 75, 0.2);
-    color: white;
+    color: var(--text-body);
     border-radius: 12px;
     padding: 40px 50px;
     width: 100%;
@@ -183,7 +183,7 @@
 .slide-name {
     font-size: clamp(1.4rem, 2.5vw, 2rem);
     font-weight: bold;
-    color: #DAA320;
+    color: var(--gold);
     font-family: cursive;
 }
 
@@ -256,7 +256,7 @@
     background: #0a0a0a;
     border: 1px solid rgba(200, 168, 75, 0.25);
     border-radius: 6px;
-    color: white;
+    color: var(--text-body);
     padding: 10px 14px;
     font-size: 1rem;
     outline: none;
@@ -264,7 +264,7 @@
 }
 
 .form-row input:focus {
-    border-color: #DAA320;
+    border-color: var(--gold-dim);
 }
 
 .form-row input::placeholder {
@@ -280,7 +280,7 @@
 #book {
     align-self: center;
     margin-top: 8px;
-    background: #DAA320;
+    background: var(--gold);
     color: black;
     border: none;
     border-radius: 6px;
@@ -318,7 +318,7 @@
 #gallery-cta a {
     background: transparent;
     border: 1px solid rgba(200, 168, 75, 0.5);
-    color: #DAA320;
+    color: var(--gold);
     font-size: 1rem;
     font-family: Calibri, sans-serif;
     letter-spacing: 0.15em;
@@ -330,8 +330,8 @@
 
 #gallery-cta a:hover {
     background: rgba(200, 168, 75, 0.1);
-    border-color: #DAA320;
-    color: #DAA320;
+    border-color: var(--gold-dim);
+    color: var(--gold);
 }
 
 @media (max-width: 768px) {
@@ -343,7 +343,7 @@
         margin-bottom: 0;
         padding: 0;
         padding-bottom: 40px;
-        background: #16171a;
+        background: var(--background-black);
         display: flex;
         min-height: 450px;
     }
@@ -383,7 +383,7 @@
         height: 160px;
         border-radius: 50%;
         overflow: hidden;
-        border: 1.7px solid #DAA320;
+        border: 1.7px solid var(--gold-dim);
         box-shadow: 0 8px 32px rgba(0,0,0,0.6);
         margin: -80px auto 0 auto;    /* negative margin pulls it up over the boundary */
         position: relative;
@@ -540,7 +540,7 @@
         right: 16px;
         background: transparent;
         border: none;
-        color: #DAA320;
+        color: var(--gold);
         font-size: 1.1rem;
         cursor: pointer;
         padding: 4px 8px;
@@ -548,7 +548,7 @@
 
     #reserve-drawer h3 {
         text-align: center;
-        color: #DAA320;
+        color: var(--gold);
         font-family: cursive;
         font-size: 1.3rem;
         margin-bottom: 20px;
