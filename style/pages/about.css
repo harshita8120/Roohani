@@ -2,7 +2,7 @@
     color:var(--text-body);
     font-size: clamp(0.9rem, 1.5vw, 1.1rem);
     margin: 0 0 1rem 0; 
-    font-family: calibri;
+    font-family: var(--font-text);
     padding:0 1vw;
     text-align: left;
     line-height: 1.8;
@@ -31,9 +31,9 @@
 .text3 figure {
     text-align: center;
 } figcaption{
-    color: #aaa;
+    color: var(--gold-dim);
     font-size: clamp(0.75rem, 1.2vw, 0.9rem); 
-    font-family: Calibri, sans-serif;
+    font-family: var(--font-text);
     font-style: italic;
     text-align: center;
     margin-top: 6px;

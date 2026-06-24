@@ -11,7 +11,7 @@
 
 /* Form wrapper */
 .form-wrapper {
-    background: linear-gradient(135deg, #1a1710, #0f0e0b);
+    background: linear-gradient(135deg, var(--card-background), #0f0e0b);
     border: 1px solid rgba(200, 168, 75, 0.2);
     padding: 40px;
     border-radius: 12px;
@@ -54,7 +54,7 @@
 }
 
 .form-wrapper .form-row label {
-    color: #aaa;
+    color: var(--gold-dim);
     font-size: 1rem;
     width: 130px;
     text-align: right;
@@ -72,7 +72,7 @@
     font-size: 1rem;
     outline: none;
     transition: border-color 0.2s;
-    font-family: inherit;
+    font-family: var(--font-text);
 }
 
 .form-wrapper .form-row input:focus,
@@ -103,7 +103,7 @@
 }
 
 #submit:hover, #submit:active {
-    background-color: #FC6A03;
+    background-color: var(--gold-light);
 }
 
 /* Sidebar */
@@ -118,7 +118,7 @@
     border: 1px solid rgba(200, 168, 75, 0.3);
     border-radius: 10px;
     padding: 20px 16px;
-    background: linear-gradient(135deg, #1a1710, #0f0e0b);
+    background: linear-gradient(135deg, var(--card-background), #0f0e0b);
     color: var(--text-body);
     font-size: 1rem;
     line-height: 1.8;

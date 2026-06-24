@@ -40,7 +40,7 @@
     color:var(--text-body);
    
 } .list a:visited{
-    color:gray;
+    color: var(--gold-dim);
 
 } .list a:hover, .list a:active{
     color: var(--text-body);
@@ -127,13 +127,13 @@
         font-size: 6vw;
         display: block;
         margin: 3vw 0;
-        font-family: Calibri;
+        font-family: var(--font-text);
     } .navbar-vertical-visible #address{
         color: var(--text-body);
         font-size: 4vw;
         display: block;
         margin: 3vw 0;
-        font-family: Calibri;
+        font-family: var(--font-text);
     }
     .navbar-vertical-visible .social-links-vertical {
         display: flex;          /* ← explicitly show it when menu is open */

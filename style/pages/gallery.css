@@ -104,7 +104,6 @@
         font-size: 7vw;
     }
 }
-
 @media (max-width: 480px) {
     .img-row img {
         height: 260px;
