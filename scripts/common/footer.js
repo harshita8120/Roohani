@@ -16,7 +16,9 @@ const footerHTML = `
 
 </div>
 
-<span> &#169 2024 Roohani by Nayanjyoti Saikia. All Rights Reserved.</span><br>
+<hr id="line">
+
+<span id="copyright"> &#169 2024 Roohani by Nayanjyoti Saikia. All Rights Reserved.</span><br>
 `;
 
 document.querySelector('.footer-container').innerHTML=footerHTML;
