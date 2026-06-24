@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // Shift the slides based on the computed width of the first slide
   //The first slide was occupies the width as much as 100% and when the second slide comes, the first slide moves out of the screen to left, thus the slide 1 is no more visible.
   function updateSlide() {
-    const slideWidth = slideArray[0].clientWidth; //clientwidth returns the visual width (padding + content) of the element
+    const slideWidth = sliderEl.clientWidth; //clientwidth returns the visual width (padding + content) of the element
     slidesContainer.style.transform = `translateX(-${slideWidth * currentIndex}px)`; //currentIndex is the only variable, it changes automatically or when we click any of the slider buttons
   }
 
