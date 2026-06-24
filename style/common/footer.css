@@ -9,7 +9,24 @@
     box-sizing: border-box;
     
     
-} .footer-container span{
+} 
+#address {
+    display: block;   
+    font-family: var(--font-text);
+    font-size: clamp(0.78rem, 1.1vw, 0.92rem);
+    color: var(--gold-dim);
+    letter-spacing: 0.08em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    opacity: 0.85;
+}
+#address .ri-map-pin-line {
+    color: var(--gold);
+    font-size: 1.2rem;
+    vertical-align: -2px;
+    margin-right: 4px;
+}
+.footer-container span{
     color: gray;
     font-size: 18px;
 

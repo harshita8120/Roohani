@@ -48,7 +48,7 @@
     border-radius: 0px;
     padding-bottom: 2px;
 
-} .menuButton, .list-vertical, #address, .social-links-vertical, #socialpara{
+} .menuButton, .list-vertical, .social-links-vertical, #socialpara{
     display: none;
 }
 

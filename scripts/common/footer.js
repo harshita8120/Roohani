@@ -1,5 +1,8 @@
 const footerHTML = `
-<p id="address">&#128205 Central Mall, Block B, 1st Floor, GS Road, Guwahati, Assam - 781006 </p>
+<p id="address">
+    <i class="ri-map-pin-line"></i>  
+    Central Mall, Block B, 1st Floor, GS Road, Guwahati, Assam - 781006 
+</p>
 
 <p id="socialPara">Follow us: </p>
 
