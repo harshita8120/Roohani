@@ -48,7 +48,7 @@
     border-radius: 0px;
     padding-bottom: 2px;
 
-} .menuButton, .list-vertical, .social-links-vertical, #socialpara{
+} .menuButton, .list-vertical, .social-links-vertical, #socialpara-header{
     display: none;
 }
 
@@ -68,7 +68,7 @@
         position: absolute;
         top: 50%;
         right: 6vw;
-    } .navbar-vertical-invisible, .list-vertical, #address, .social-links-vertical, #socialpara{
+    } .navbar-vertical-invisible, .list-vertical, #address-header, .social-links-vertical, #socialpara{
         display: none;
     }.list {
         display: none;
@@ -117,23 +117,60 @@
     } .list-vertical a {
         margin-top: 5vw;        
         font-size: 7vw;        
-    
-    } .social-links-vertical img{
+    }
+    /* } .social-links-vertical img{
         width: 8vw;        
         height: 8vw;
         margin: 2vw;
-    } .navbar-vertical-visible #socialPara {
-        color: var(--text-body);
-        font-size: 6vw;
-        display: block;
-        margin: 3vw 0;
+    } */
+    .ri-instagram-line, .ri-facebook-line{
+        color: var(--gold);
+        font-size: 20px;
+    }
+    .social-links-header{
+        display: flex;
+        justify-content: center;
+        gap: 8vw;
+        margin-bottom: 1vw;
+
+    }.social-links-header a {
+        background: transparent;
+        border: 1px solid rgba(200, 168, 75, 0.3);
+        border-radius: 50%;
+        width: 42px;
+        height: 42px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+        font-size: 0;
+        transition: border-color 0.2s, background 0.2s;
+    }.social-links-header a:hover {
+        background: rgba(200, 168, 75, 0.1);
+        border-color: var(--gold);
+        text-decoration: none;
+    }
+    #socialPara-header {
+        font-family: var(--font-heading);
+        font-size: clamp(2rem, 1.8vw, 1.8rem);
+        letter-spacing: 0.2em;
+        color: var(--gold-dim);
+        text-transform: uppercase;
+        margin: 14vw 0 4vw 0;
+    }#address-header{
+        display: block;   
         font-family: var(--font-text);
-    } .navbar-vertical-visible #address{
-        color: var(--text-body);
-        font-size: 4vw;
-        display: block;
-        margin: 3vw 0;
-        font-family: var(--font-text);
+        font-size: clamp(0.78rem, 1.1vw, 0.92rem);
+        color: var(--gold-dim);
+        letter-spacing: 0.08em;
+        line-height: 1.6;
+        margin: 4vw;
+        opacity: 0.85;
+    } #address-header .ri-map-pin-line {
+        color: var(--gold);
+        font-size: 1.2rem;
+        vertical-align: -2px;
+        margin-right: 4px;
     }
     .navbar-vertical-visible .social-links-vertical {
         display: flex;          /* ← explicitly show it when menu is open */

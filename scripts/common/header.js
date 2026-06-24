@@ -26,9 +26,9 @@ const navbarHTML = `
           <a href='Contact.html' target='_self' title='Contact'> Contact </a> 
           <hr>
 
-          <p id="socialPara">Follow us: </p>
+          <p id="socialPara-header">Follow us: </p>
 
-          <div class="social-links-vertical">
+          <div class="social-links-header">
 
                <a href="https://www.instagram.com/roohanibynayanjyoti?igsh=MXJidzBjYm1zN2tqZQ==" title="roohanibynayanjyoti" target="_blank">
                <i class="ri-instagram-line"></i></a>
@@ -41,7 +41,10 @@ const navbarHTML = `
 
           </div>
 
-          <p id="address">&#128205 Central Mall, Block B, 1st Floor, GS Road, Guwahati, Assam - 781006 </p>
+          <p id="address-header">
+               <i class="ri-map-pin-line"></i> 
+               Central Mall, Block B, 1st Floor, GS Road, Guwahati, Assam - 781006 
+          </p>
 
      </div>
 </div>
