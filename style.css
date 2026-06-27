@@ -1,9 +1,9 @@
 /* === CSS VARIABLES === */
 :root {
     --gold: #C8A84B;
-    --gold-light: #E8C96A;  /* for hover states */
+    --wine-red: #640918;  /* for hover states */
     --gold-dim: #8B6E2A;    /* for borders, hr lines */
-    --text-body: #f0e8d8;   /* replaces white for body text */
+    --white: #f0e8d8;   /* replaces white for body text */
 	--background-black: #0e0d0b;
 	--card-background: #1a1710;
 	--font-heading: 'Cinzel', serif;
@@ -58,7 +58,7 @@ h2 + hr {
 	font-size: 30px;
 
 } a:link {
-	color:var(--text-body);
+	color:var(--white);
 
 } a:visited {
 	color: var(--gold-dim);

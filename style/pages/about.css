@@ -1,5 +1,5 @@
  .text {
-    color:var(--text-body);
+    color:var(--white);
     font-size: clamp(0.9rem, 1.3vw, 1.05rem);
     margin: 0 0 1rem 0; 
     font-family: var(--font-text);
