@@ -3,11 +3,11 @@ function validateForm(formElement) {
 
   // GET THE VALUES FROM THE FORM
     // We use document.forms to target the form by name, then the input by name
-    var name = formElement["Name"].value;
-    var email = formElement["E-mail"].value;
-    var date = formElement["Date"].value;
-    var time = formElement["Time"].value;
-    var size = formElement["No. of Persons"].value;
+    const name = formElement["Name"].value;
+    const email = formElement["E-mail"].value;
+    const date = formElement["Date"].value;
+    const time = formElement["Time"].value;
+    const size = formElement["No. of Persons"].value;
 
   if(!name.trim()) {
     alert("Please enter your name");
@@ -31,9 +31,9 @@ function validateForm(formElement) {
 }
 
 function msgFunction(formElement) {
-    var name = formElement["Name"].value;
-    var email = formElement["E-mail"].value;
-    var msg = formElement["Message"].value;
+    const name = formElement["Name"].value;
+    const email = formElement["E-mail"].value;
+    const msg = formElement["Message"].value;
    
 
   if(!name.trim()) {
