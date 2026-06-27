@@ -1,27 +1,27 @@
 //Alert functions
-function validateForm() {
+function validateForm(formElement) {
 
   // GET THE VALUES FROM THE FORM
     // We use document.forms to target the form by name, then the input by name
-    var name = document.forms["resForm"]["Name"].value;
-    var email = document.forms["resForm"]["E-mail"].value;
-    var date = document.forms["resForm"]["Date"].value;
-    var time = document.forms["resForm"]["Time"].value;
-    var size = document.forms["resForm"]["No. of Persons"].value;
+    var name = formElement["Name"].value;
+    var email = formElement["E-mail"].value;
+    var date = formElement["Date"].value;
+    var time = formElement["Time"].value;
+    var size = formElement["No. of Persons"].value;
 
-  if(name=='') {
+  if(!name.trim()) {
     alert("Please enter your name");
     return false;
-  } else if(email=='') {
+  } else if(!email.trim()) {
     alert("Please enter a valid email");
     return false;
-  } else if(date=='') {
+  } else if(!date) {
     alert("Please select a date");
     return false;
-  } else if(time=='') {
+  } else if(!time) {
     alert("Please select a time");
     return false;
-  } else if(size=='') {
+  } else if(!size) {
     alert("Please select number of guests");
     return false;
   } else {
@@ -30,19 +30,19 @@ function validateForm() {
   }
 }
 
-function msgFunction() {
-    var name = document.forms["contactForm"]["Name"].value;
-    var email = document.forms["contactForm"]["E-mail"].value;
-    var msg = document.forms["contactForm"]["Message"].value;
+function msgFunction(formElement) {
+    var name = formElement["Name"].value;
+    var email = formElement["E-mail"].value;
+    var msg = formElement["Message"].value;
    
 
-  if(name=='') {
+  if(!name.trim()) {
     alert("Please enter your name");
     return false;
-  } else if(email=='') {
+  } else if(!email.trim()) {
     alert("Please enter a valid email");
     return false;
-  }  else if(msg=='') {
+  }  else if(!msg.trim() || msg === "Type your message here...") {
     alert("Please enter a message");
     return false;
   } else {

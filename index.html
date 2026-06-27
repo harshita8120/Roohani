@@ -137,7 +137,7 @@
 <div id="reserve-section">
     <img src="images/Reserve.png" id="reserve-img-desktop" alt="Reserve a Table">
     <form id="reserve" name="resForm" action="https://formspree.io/f/xrbkkzdv" 
-          onsubmit="return validateForm();" method="post">
+          onsubmit="return validateForm(this);" method="post">
         <div class="form-row">
             <label for="name">Name:</label>
             <input type="text" id="name" name="Name">
@@ -177,7 +177,7 @@
         <button id="drawer-close">✕</button>
         <h3>Reserve a Table</h3>
         <form name="resForm2" action="https://formspree.io/f/xrbkkzdv"
-              onsubmit="return validateForm();" method="post">
+              onsubmit="return validateForm(this);" method="post">
             <div class="form-row">
                 <label>Name:</label>
                 <input type="text" name="Name">
