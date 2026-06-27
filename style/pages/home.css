@@ -219,6 +219,12 @@
     border-radius: 12px;
     flex-shrink: 0;
 }
+#reserve-img-desktop {
+    width: clamp(200px, 22vw, 320px);
+    height: auto;
+    border-radius: 12px;
+    flex-shrink: 0;
+}
 
 #reserve {
     margin:0;

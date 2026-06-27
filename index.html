@@ -130,8 +130,40 @@
 <br><br>
 
 
-<!-- REPLACE the entire #reserve-section div with this -->
+<!-- Desktop reservation — visible on desktop, hidden on mobile -->
+<div id="reserve-section">
+    <img src="images/Reserve.png" id="reserve-img-desktop" alt="Reserve a Table">
+    <form id="reserve" name="resForm" action="https://formspree.io/f/xrbkkzdv" 
+          onsubmit="return validateForm();" method="post">
+        <div class="form-row">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="Name">
+        </div>
+        <div class="form-row">
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="E-mail">
+        </div>
+        <div class="form-row">
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="Date">
+        </div>
+        <div class="form-row">
+            <label for="time">Time:</label>
+            <input type="time" id="time" name="Time">
+        </div>
+        <div class="form-row">
+            <label>No. of Persons:</label>
+            <input type="number" min="1" max="15" name="No. of Persons">
+        </div>
+        <div class="form-row">
+            <label>Any Preferences:</label>
+            <input type="text" name="Preferences">
+        </div>
+        <button id="book" type="submit">Book</button>
+    </form>
+</div>
 
+<!-- Mobile trigger — hidden on desktop, visible on mobile -->
 <div id="reserve-trigger">
     <img src="images/Reserve.png" id="reserve-img" alt="Reserve a Table">
 </div>
@@ -141,37 +173,36 @@
         <div id="drawer-handle"></div>
         <button id="drawer-close">✕</button>
         <h3>Reserve a Table</h3>
-        <form id="reserve" name="resForm" action="https://formspree.io/f/xrbkkzdv" 
+        <form name="resForm2" action="https://formspree.io/f/xrbkkzdv"
               onsubmit="return validateForm();" method="post">
             <div class="form-row">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="Name">
+                <label>Name:</label>
+                <input type="text" name="Name">
             </div>
             <div class="form-row">
-                <label for="email">E-mail:</label>
-                <input type="email" id="email" name="E-mail">
+                <label>E-mail:</label>
+                <input type="email" name="E-mail">
             </div>
             <div class="form-row">
-                <label for="date">Date:</label>
-                <input type="date" id="date" name="Date">
+                <label>Date:</label>
+                <input type="date" name="Date">
             </div>
             <div class="form-row">
-                <label for="time">Time:</label>
-                <input type="time" id="time" name="Time">
+                <label>Time:</label>
+                <input type="time" name="Time">
             </div>
             <div class="form-row">
-                <label>No. of Persons:</label>
+                <label>Persons:</label>
                 <input type="number" min="1" max="15" name="No. of Persons">
             </div>
             <div class="form-row">
-                <label>Any Preferences:</label>
+                <label>Preferences:</label>
                 <input type="text" name="Preferences">
             </div>
-            <button id="book" type="submit">Book</button>
+            <button id="book-mobile" type="submit">Book</button>
         </form>
     </div>
 </div>
-
 
 <br>
 
