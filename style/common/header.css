@@ -31,20 +31,14 @@
     gap: clamp(1rem, 3vw, 4rem); 
     
 } .list a {
-    color:var(--white);
+    color:var(--gold-dim);
     background-color:black;
     text-decoration:none;
     font-size: clamp(1rem, 1.8vw, 1.4rem);
     font-family: var(--font-heading);
     font-weight: 600;
 
-}.list a:link{
-    color:var(--white);
-   
-} .list a:visited{
-    color: var(--gold-dim);
-
-} .list a:hover, .list a:active{
+} .list a:hover, .list a:active, .list a.current{
     color: var(--white);
     border-bottom: 2.5px solid var(--gold-dim);
     border-radius: 0px;
@@ -120,11 +114,6 @@
         margin-top: 5vw;        
         font-size: 7vw;        
     }
-    /* } .social-links-vertical img{
-        width: 8vw;        
-        height: 8vw;
-        margin: 2vw;
-    } */
     .ri-instagram-line, .ri-facebook-line{
         color: var(--gold);
         font-size: 20px;

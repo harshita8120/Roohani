@@ -81,3 +81,18 @@ window.addEventListener('scroll', () => {
 
     lastScrollY = currentScrollY;
 });
+
+//if a function is enclosed within brackets, it runs automatically on page load. : Immediately Invoked Function Expression
+(function activeTab() {
+     const navLinks = document.querySelectorAll('.list a, .list-vertical a');
+     const currentPath = window.location.pathname.split('/').pop().toLowerCase() || 'index.html'; 
+    
+     navLinks.forEach(link => {
+         // FIXED: linkPath must be read inside the loop for every single anchor item
+         const linkPath = link.getAttribute('href').toLowerCase();
+
+         if (linkPath === currentPath) {
+             link.classList.add('current');
+         }
+     });
+})(); //() for trigerring the function
