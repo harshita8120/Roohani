@@ -5,6 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const slidesContainer = document.querySelector('.slides');
   const slideArray = Array.from(document.getElementsByClassName('slide'));//creating array
   let currentIndex = 0;
+  const sliderEl = document.querySelector('.slider');
 
   // Shift the slides based on the computed width of the first slide
   //The first slide was occupies the width as much as 100% and when the second slide comes, the first slide moves out of the screen to left, thus the slide 1 is no more visible.
@@ -31,7 +32,6 @@ document.addEventListener('DOMContentLoaded', () => {
   let autoplayInterval = setInterval(() => nextBtn.click(), 4000);
 
   //pause on hover
-  const sliderEl = document.querySelector('.slider');
   sliderEl.addEventListener('mouseenter', () => clearInterval(autoplayInterval));
   sliderEl.addEventListener('mouseleave', () => {
     autoplayInterval = setInterval(() => nextBtn.click(), 4000);
