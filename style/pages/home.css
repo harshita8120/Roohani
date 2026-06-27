@@ -57,6 +57,7 @@
 
 #author {
     font-size: clamp(1rem, 1.8vw, 1.3rem);
+    font-family: var(--font-subheading);
     float: none;
     margin-top: 0.5rem;
 } 
@@ -71,26 +72,26 @@
 #service {
     padding: 0 5%;
     position: relative;
-
-} #row {
+} 
+#row {
     width: 75%;
     margin: 0 auto;
     display: flex;
     align-items: flex-start;
     justify-content: center;
     gap: 5%; 
-
-} #col {
+} 
+#col {
     flex-basis: 45%;
     position: relative;
-
-} #col img {
+} 
+#col img {
     width: 100%;
     height: 380px;
     object-fit: cover;
     display: block;
-
-} #info1, #info2 {
+} 
+#info1, #info2 {
     width: 80%;           
     position: absolute;
     bottom: 0;             
@@ -103,22 +104,24 @@
     background: black;
     color: var(--text-body);
     border-radius: 0 0 3px 3px;
+    font-family: var(--font-subheading);
 }
-.info h3 {
-    font-weight:normal;
+.info .service-name {
     font-size:30px;
-
-} .info p {
-    font-size:20px;
+    font-weight: normal;
+} 
+.info .service-timing {
+    font-size:1.3vw;
+    font-style: italic;
     margin: 6px 0;
     max-height:0;
     overflow:hidden;
     transition: max-height 1s;
-
-} #photo1, #photo2 {
+} 
+#photo1, #photo2 {
     filter:grayscale(30%);
-
-} #layer {
+} 
+#layer {
     width:100%;
     position:absolute;
     top:0;
@@ -126,14 +129,12 @@
     border:none;
     overflow:hidden;
     transition: max-height 1s; 
-
-} #col:hover .info p {
+} 
+#col:hover .info p {
     max-height:100px;
-
-} #col:hover #layer {
+} 
+#col:hover #layer {
     max-height:500px;
-
-
 }
 
 
@@ -183,9 +184,8 @@
 
 .slide-name {
     font-size: clamp(1.4rem, 2.5vw, 2rem);
-    font-weight: bold;
     color: var(--gold);
-    font-family: var(--font-heading);
+    font-family: var(--font-subheading);
 }
 
 .slide-title {
@@ -294,6 +294,8 @@
     height: 45px;
     width: 120px;
     font-size: 1.1rem;
+    font-family: var(--font-subheading);
+    font-weight: bold;
     cursor: pointer;
     transition: background 0.2s;
 }
