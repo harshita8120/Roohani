@@ -112,7 +112,18 @@
         
     } .list-vertical a {
         margin-top: 5vw;        
-        font-size: 7vw;        
+        font-size: 7vw;
+        color:var(--gold-dim);
+        background-color:black;
+        text-decoration:none;
+        font-family: var(--font-heading);
+        font-weight: 400;
+    
+    } .list-vertical a:hover, .list-vertical a:active, .list-vertical a.current{
+        color: var(--white);
+        border-bottom: 2px solid var(--gold-dim);
+        border-radius: 0px;
+        padding-bottom: 2px;       
     }
     .ri-instagram-line, .ri-facebook-line{
         color: var(--gold);
@@ -143,7 +154,7 @@
     }
     #socialPara-header {
         font-family: var(--font-heading);
-        font-size: clamp(2rem, 1.8vw, 1.8rem);
+        font-size: clamp(1.4rem, 1.5vw, 1.5rem);
         letter-spacing: 0.2em;
         color: var(--gold-dim);
         text-transform: uppercase;
@@ -151,7 +162,7 @@
     }#address-header{
         display: block;   
         font-family: var(--font-text);
-        font-size: clamp(0.78rem, 1.1vw, 0.92rem);
+        font-size: clamp(0.8rem, 1.2vw, 1rem);
         color: var(--gold-dim);
         letter-spacing: 0.08em;
         line-height: 1.6;
