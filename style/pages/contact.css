@@ -97,6 +97,8 @@
     height: 45px;
     width: 110px;
     font-size: 1.1rem;
+    font-family: var(--font-subheading);
+    font-weight: 900;
     cursor: pointer;
     transition: background 0.2s;
     margin-top: 8px;
@@ -121,7 +123,7 @@
     background: linear-gradient(135deg, var(--card-background), #0f0e0b);
     color: var(--text-body);
     font-size: 1.3rem;
-    font-family: var(--font-text);
+    font-family: var(--font-subheading);
     line-height: 1.8;
     text-align: center;
     transition: transform 0.3s, border-color 0.2s;

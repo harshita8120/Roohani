@@ -195,7 +195,7 @@
 }
 
 .slide-review {
-    font-size: clamp(0.95rem, 1.3vw, 1.1rem);
+    font-size: clamp(0.9rem, 1.2vw, 1rem);
     color: #ddd;
     line-height: 1.7;
 }

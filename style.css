@@ -7,7 +7,8 @@
 	--background-black: #0e0d0b;
 	--card-background: #1a1710;
 	--font-heading: 'Cinzel', serif;
-	--font-text: calibri, serif;
+	--font-title: Candara, sans serif;
+	--font-text: 'Lato', calibri, serif;
 	--font-subheading: 'Marcellus', 'Montserrat';
 	--font-handwriting: 'Merienda', 'Satisfy';
 }
@@ -78,7 +79,7 @@ form {
     color: var(--gold);
     font-size: clamp(2rem, 6vw, 4rem);
     text-align: center;
-    font-family: Candara, sans-serif;
+    font-family: var(--font-title);
     margin: 12px 0;
 }
 .text, p { 
