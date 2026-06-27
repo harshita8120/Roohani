@@ -5,11 +5,11 @@
 }
 
 .slider-track1 {
-    animation: scroll-RL 30s linear infinite;
+    animation: scroll-RL var(--marquee-duration) linear infinite;
 }
 
 .slider-track2 {
-    animation: scroll-LR 30s linear infinite;
+    animation: scroll-LR var(--marquee-duration) linear infinite;
 }
 
 .gallery-track:hover {

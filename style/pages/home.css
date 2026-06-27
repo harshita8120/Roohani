@@ -56,7 +56,7 @@
 }
 
 #author {
-    font-size: clamp(1rem, 1.8vw, 1.3rem);
+    font-size: clamp(1rem, 1.9vw, 1.3rem);
     font-family: var(--font-subheading);
     float: none;
     margin-top: 0.5rem;
@@ -70,7 +70,7 @@
 /*Service section*/
 
 #service {
-    padding: 0 5%;
+    padding: 0 4%;
     position: relative;
 } 
 #row {
@@ -107,11 +107,11 @@
     font-family: var(--font-subheading);
 }
 .info .service-name {
-    font-size:30px;
+    font-size: 2vw;
     font-weight: normal;
 } 
 .info .service-timing {
-    font-size:1.3vw;
+    font-size: 1.3vw;
     font-style: italic;
     margin: 6px 0;
     max-height:0;
@@ -443,6 +443,13 @@
     #col img {
         height: 260px;          /* shorter on mobile */
     }
+    .info .service-name {
+    font-size: 6.8vw;
+    }
+    .info .service-timing {
+        font-size: 4vw;
+        margin: 6px 0;
+    }
 
     /* Feedback slider */
     .feedback {
@@ -470,15 +477,15 @@
     }
 
     .slide-name {
-        font-size: clamp(1rem, 5vw, 1.3rem);
+        font-size: clamp(1rem, 6vw, 1.5rem);
     }
 
     .slide-title {
-        font-size: clamp(0.7rem, 3vw, 0.85rem);
+        font-size: clamp(0.8rem, 4vw, 0.9rem);
     }
 
     .slide-review {
-        font-size: clamp(0.8rem, 3.5vw, 0.95rem);
+        font-size: clamp(0.9rem, 4vw, 1rem);
         line-height: 1.6;
     }
 
@@ -493,7 +500,7 @@
     }
 
     #reserve-img {
-        width: clamp(180px, 55vw, 260px);
+        width: clamp(180px, 600vw, 260px);
         height: auto;
         border-radius: 12px;
         cursor: pointer;

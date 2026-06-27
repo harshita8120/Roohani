@@ -6,11 +6,14 @@
     --white: #f0e8d8;   /* replaces white for body text */
 	--background-black: #0e0d0b;
 	--card-background: #1a1710;
+
 	--font-heading: 'Cinzel', serif;
 	--font-title: Candara, sans serif;
 	--font-text: 'Lato', calibri, serif;
 	--font-subheading: 'Marcellus', 'Montserrat';
 	--font-handwriting: 'Merienda', 'Satisfy';
+
+	--marquee-duration: 30s;
 }
 
 /* === RESET === */
@@ -77,6 +80,10 @@ form {
 	font-size: 1.1rem; 
 }
 @media (max-width: 768px) {
+    :root {
+        --marquee-duration: 30s; 
+    }
+
     .title { 
         font-size: 8vw; 
     }
@@ -84,4 +91,5 @@ form {
         font-size: 7vw;
         text-align: center;
     }
+
 }
