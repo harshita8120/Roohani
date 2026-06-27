@@ -64,7 +64,7 @@
 .form-wrapper .form-row input,
 .form-wrapper .form-row textarea {
     flex: 1;
-    background: #0a0a0a;
+    background: var(--input-black);
     border: 1px solid rgba(200, 168, 75, 0.25);
     border-radius: 6px;
     color: var(--white);
@@ -91,7 +91,7 @@
 #submit {
     align-self: center;
     background-color: var(--gold);
-    color: black;
+    color: var(--black);
     border: none;
     border-radius: 6px;
     height: 45px;

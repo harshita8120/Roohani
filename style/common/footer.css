@@ -1,5 +1,5 @@
 .footer-container { 
-    background-color:black;
+    background-color:var(--black);
     width:100%;
     height: auto;
     text-align:center;
@@ -26,11 +26,7 @@
     vertical-align: -2px;
     margin-right: 4px;
 }
-.footer-container span{
-    color: gray;
-    font-size: 18px;
-
-}.social{
+.social{
     display: flex;
     justify-content: center;
     gap: 1.8vw;

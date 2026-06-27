@@ -73,6 +73,7 @@ function renderVideo(item, sizeClass) {
                    src="${item.src}"
                    controls
                    preload="metadata">
+                   muted
             </video>`;
 } //preload is for video thumbnails
 

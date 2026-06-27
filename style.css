@@ -4,8 +4,12 @@
     --wine-red: #640918;  /* for hover states */
     --gold-dim: #8B6E2A;    /* for borders, hr lines */
     --white: #f0e8d8;   /* replaces white for body text */
+    --black: black;
 	--background-black: #0e0d0b;
 	--card-background: #1a1710;
+    --input-black: #0a0a0a;
+    --golden-outline: rgba(200, 168, 75, 0.5);
+    --hidden-gray: #555;
 
 	--font-heading: 'Cinzel', serif;
 	--font-title: Candara, sans serif;
@@ -83,7 +87,6 @@ form {
     :root {
         --marquee-duration: 30s; 
     }
-
     .title { 
         font-size: 8vw; 
     }
@@ -91,5 +94,4 @@ form {
         font-size: 7vw;
         text-align: center;
     }
-
 }
