@@ -88,7 +88,6 @@ window.addEventListener('scroll', () => {
      const currentPath = window.location.pathname.split('/').pop().toLowerCase() || 'index.html'; 
     
      navLinks.forEach(link => {
-         // FIXED: linkPath must be read inside the loop for every single anchor item
          const linkPath = link.getAttribute('href').toLowerCase();
 
          if (linkPath === currentPath) {
