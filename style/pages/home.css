@@ -312,6 +312,15 @@
     padding: 20px 0;
     margin-bottom: 40px;
 }
+.gallery-track {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.gallery-track img {
+    flex-shrink: 0;    /* Explicit hardware locking for ultra-wide rendering runways */
+}
 
 .gallery img {
     width: 260px;
@@ -353,7 +362,7 @@
         margin-bottom: 0;
         padding: 0;
         padding-bottom: 40px;
-        background: var(--black);
+        background: var(--background-black);
         display: flex;
         min-height: 450px;
     }

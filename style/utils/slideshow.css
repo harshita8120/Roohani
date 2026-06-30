@@ -2,6 +2,8 @@
     display: flex;
     gap: 16px;
     width: max-content;        /* expands to fit all images in one row */
+    max-width: none;
+    will-change: transform;
 }
 
 .slider-track1 {
@@ -31,11 +33,26 @@
     flex-shrink: 0;
     transition: transform 0.3s, filter 0.3s;
     cursor: pointer;
+
 }
 .gallery-img:hover{
     transform: scale(1.1) rotate(3deg);   /* triggers gallery-track:hover → pauses flow */
     z-index: 1;
     position: relative;
+}
+@media (max-width: 768px) {
+    .gallery-rows {
+        gap: 12px;
+    }
+    
+    .gallery-track {
+        gap: 12px;
+    }
+
+    .gallery-img {
+        width: 160px;
+        height: 160px;
+    }
 }
 
 

@@ -17,7 +17,7 @@
 	--font-subheading: 'Marcellus', 'Montserrat';
 	--font-handwriting: 'Merienda', 'Satisfy';
 
-	--marquee-duration: 30s;
+	--marquee-duration: 80s;
 }
 
 /* === RESET === */
@@ -85,7 +85,7 @@ form {
 }
 @media (max-width: 768px) {
     :root {
-        --marquee-duration: 30s; 
+        --marquee-duration: 95s; 
     }
     .title { 
         font-size: 8vw; 
